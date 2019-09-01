@@ -1,0 +1,293 @@
+/*--All-----------------------------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #e0e0e0;
+}
+
+.main-header, footer {
+  width: 100%;
+  height: 80px;
+  background-color: #ffd1dc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.article-header {
+  text-align: center;
+  width: 100%;
+  background-color: white;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  margin-left: 30%;
+  font-size: 18px;
+}
+
+.menu ul, .footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu a {
+  margin: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.footer a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+.footer i {
+  font-size: 20px;
+}
+
+.logo {
+  height: 70px;
+}
+
+p, h2 {
+  margin-top: 20px;
+}
+
+/*--Home----------------------------------------------------------------------*/
+.about-me {
+  text-align: center;
+  padding: 20px 20px 20px 20px;
+  max-width: 850px;
+  margin: auto;
+}
+
+.avatar {
+  max-width: 200px;
+}
+
+.about-me li {
+  list-style-position: inside;
+  list-style-image: url(images/paw.png);
+}
+
+/*--Hobby---------------------------------------------------------------------*/
+.hobby {
+  padding: 20px 20px 20px 20px;
+  max-width: 850px;
+  margin: auto;
+}
+
+.mountain,
+.horse,
+.house {
+  max-width: 300px;
+}
+
+.mountain {
+  margin-right: 20px;
+  float: left;
+}
+
+.horse {
+  margin-left: 20px;
+  float: right;
+}
+/*--Contact-------------------------------------------------------------------*/
+.contact-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar-form-header,
+.contact-form-header {
+  background-color: inherit;
+}
+
+.sidebar,
+.contact-form {
+  background-color: #F6F7F8;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+
+  width: 80%;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.location,
+.mail,
+.form-row {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-row input[type='text'],
+.form-row input[type='email'],
+.form-row select {
+  background-color: #FFFFFF;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+
+.form-row input[type='text']:invalid,
+.form-row input[type='email']:invalid {
+  border: 1px solid #D55C5F;
+  color: #D55C5F;
+  box-shadow: none; /* Remove default red glow in Firefox */
+}
+
+.form-row textarea {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+
+  min-height: 200px;
+  margin-bottom: 10px;
+  padding: 7px;
+  resize: none;
+}
+
+.form-row .instructions {
+  color: #999999;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.form-row button {
+  font-size: 16px;
+  font-weight: bold;
+
+  color: black;
+  background-color: #ffd1dc;
+
+  border: none;
+  border-radius: 3px;
+
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+.form-row button:hover {
+  background-color: #e5bcc6;
+}
+
+.form-row button:active {
+  background-color: #ffd5df;
+}
+
+@media only screen and (min-width: 700px) {
+
+  .contact-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .sidebar {
+    width: 20%;
+  }
+
+  .contact-form {
+    width: 70%;
+    margin-left: 40px;
+  }
+
+  .location,
+  .mail,
+  .form-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; /* To avoid stretching */
+  }
+
+  .sidebar-form-header,
+  .contact-form-header {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  p {
+      margin-left: 20px;
+  }
+
+  .form-row input[type='text'],
+  .form-row input[type='email'],
+  .form-row select {
+    width: 250px;
+    height: initial;
+  }
+
+  .form-row label {
+    margin-top: 7px;
+    padding-right: 20px;
+  }
+
+  .form-row .instructions {
+    margin-left: 120px;
+  }
+
+  .form-row textarea {
+    width: 450px;
+  }
+}
+
+/*--Pluto---------------------------------------------------------------------*/
+.content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photo-grid-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.photo-grid {
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photo-grid-item {
+  border: 1px solid #fff;
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 961px) {
+  .photo-grid {
+    flex-direction: row;
+  }
+
+}
