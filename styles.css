@@ -91,8 +91,7 @@ p, h2 {
 }
 
 .mountain,
-.horse,
-.house {
+.horse {
   max-width: 300px;
 }
 
@@ -104,6 +103,14 @@ p, h2 {
 .horse {
   margin-left: 20px;
   float: right;
+}
+
+.house {
+  max-height: 300px;
+}
+.about-architecture {
+  display: flex;
+  justify-content: center;
 }
 /*--Contact-------------------------------------------------------------------*/
 .contact-content {
